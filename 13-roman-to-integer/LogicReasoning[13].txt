@@ -1,0 +1,29 @@
+7/16/25
+
+Roman to Integer is using a hashmap to convert the roman numerals to the correct numbers we use. There is some extra math involved 
+where if the number you are currently at is less than the next number in the sequence then you need to subtract and then add.
+
+Ex: IV = 4 I = 1, V = 5 | V - I = 4
+
+Otherwise we are just adding sequentially based on order from left to right.
+
+'I':1
+'V':5
+'X':10
+'L':50
+'C':100
+'D':500
+'M':1000
+
+First Iteration: roman-to-integer-1.py
+use zip function to loop both a and b at i and i+1 repectively and then compare those values for addition and subtraction.
+
+        for a, b in zip(s, s[1:]):
+            if numerals[a] < numerals[b]:
+                res -= numerals[a]
+            else:
+                res += numerals[a]
+
+        return res + numerals[s[-1]] 
+
+Second Iteration:
