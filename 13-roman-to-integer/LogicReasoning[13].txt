@@ -26,4 +26,5 @@ use zip function to loop both a and b at i and i+1 repectively and then compare 
 
         return res + numerals[s[-1]] 
 
-Second Iteration:
+Second Iteration: roman-to-integer-2.py
+This second iteration doesnt use zip as it has slightly better space efficiency due to not having to slice. Otherwise this py file just uses a for loop to iterate through the number s and then checks for addition and subtraction. Since we are already adding the prev value to the result we need to subtract (2*prev) when we loop, otherwise works the same as the first script.
