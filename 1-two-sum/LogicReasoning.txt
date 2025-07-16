@@ -1,0 +1,27 @@
+7/16/25
+
+two-sum logic is looping through all possible combinations of a nums array to find a target value made up of some value
+x and y. 
+
+Brute force:
+double for loop to loop through check the first value i with every other value j and then i++ to continue until reaching the
+end of the array
+
+Hashmap:
+Since hashmaps use a key/value pairing we can use that to make the search for the possible combinations quicker by setting the
+key = array value and the hashmap value = array position of that value.
+
+2nd iteration:
+first for loop to create hashmap and 2nd for loop to loop and check for combinations that work
+
+3rd iteration:
+Since we can use if logic to simply check if the y value we are looking for exists in the hashmap we can cut out the 2nd for loop
+since we use logic of:
+
+for i in length of nums:
+  y = target - nums[i]
+  check for y in hashmap
+    if true then return values:
+  otherwise loop and set new hashvalue for i
+
+return empty array
