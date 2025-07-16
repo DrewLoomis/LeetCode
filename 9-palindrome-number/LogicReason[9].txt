@@ -1,3 +1,40 @@
 7/15/25
 
-this quest
+palindrome number is all about simplying finding if the given number x is a palindrome (same when reversed) 
+example of this is 121 but -1221 would be 1221-.
+
+First interation:
+by converting x into a string we can then just use reverse string logic in python stringx[::-1] to reverse a string
+and then compare the current str(x) to the reversed string and return true or false
+
+second interation:
+
+Used javascript but can be done with an langauge. 
+By not converting to a string we can use remainder logic and while looping through the number we can reverse it. This
+does require extra of logic to check for negatives and also for numbers less than 10.
+
+xcopy = x //creates copy
+reverse = 0
+while x > 0:
+  reverse = (reverse * 10) + (x % 10)
+  x //= 10
+return reverse == xcopy
+
+logic: 
+x = 121
+reverse = 0
+reverse*10 = 0
+x % 10 = 1
+reverse + x = 1
+
+x = 12
+reverse = 1
+reverse * 10 = 10
+x % 10 = 2
+reverse + x = 12
+
+x = 1
+reverse = 12
+reverse*10 = 120
+x % 10 = 1
+reverse + x = 121
