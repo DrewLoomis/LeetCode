@@ -1,0 +1,19 @@
+This problem (easy) is a check of understanding for valid paretheses and the lgoc to confirm them.
+
+First Iteration:
+
+Using a list i was able to get the basic cases but was unable to get the espanded problem sets as the quick checks
+for (( would render my main logic useless. I then went back to the drawing board and looked at both mapping to catch
+the edge cases and also to fix my time complexity since having a simple check with map is better than a long 
+if statement that has to run ever char in s.
+
+Second Iteration:
+
+We need to have a null check for the stack since we could be dealing with an empty string or the first value being incorrect
+for the pop() which would lead to a null error. After that the logic is that:
+
+check if s[i] is in mapping:
+  if the stack is empty or the stack pop is not the expected pair in mapping:
+    return False
+  else:
+    append to the stack and continue looping
