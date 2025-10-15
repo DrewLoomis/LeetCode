@@ -1,0 +1,19 @@
+This [easy] problem was the first implemention of a linked list ive done in leetcode.
+
+Logic of singly linked lists:
+each linked list has a head that points to the next part of the body and only goes one way (cant go back)
+each node has a value attached to it as a list.val parameter
+
+Logic of the question:
+
+The question gives us two sorted singly linked lists of increasing values. Our task is to merge these
+sorted lists and return the mergedList.
+
+First create a linkedList with a dummy node as the head. (mergedList = dum = LinkedList()
+
+Then loop through both sorted lists and grab the smaller value and set your node.next and node.val
+based on which lists.val is smaller
+
+Finally do a check for empty lists which we would return whatever lists has values
+
+return the dummy nodes next(dum.next) which is just your head of the linkedList
