@@ -11,8 +11,12 @@ sorted lists and return the mergedList.
 
 First create a linkedList with a dummy node as the head. (mergedList = dum = LinkedList()
 
-Then loop through both sorted lists and grab the smaller value and set your node.next and node.val
-based on which lists.val is smaller
+Then loop through both sorted lists
+
+  check which lists value is smaller
+    grab the smaller value and set your node.next and node.val
+  else
+    grab other lists value and set your node.next and node.val
 
 Finally do a check for empty lists which we would return whatever lists has values
 
