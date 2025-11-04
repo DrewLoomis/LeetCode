@@ -3,5 +3,5 @@ class Solution:
         c = int(a,2)
         d = int(b,2)
         e = c + d
-        return bin(e)[2:]
+        return bin(e)[2:] #gets rid of leading hex (0B)
         
